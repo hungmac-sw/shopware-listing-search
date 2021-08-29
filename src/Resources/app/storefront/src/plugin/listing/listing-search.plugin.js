@@ -64,7 +64,6 @@ export default class MacListingSearchPlugin extends FilterBasePlugin {
      * @public
      */
     getValues() {
-        console.log('vao get value');
         if (this.options.keywords === null) {
             return { search: '' };
         }
