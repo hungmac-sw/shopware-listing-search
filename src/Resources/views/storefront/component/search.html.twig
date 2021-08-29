@@ -1,0 +1,28 @@
+{% block mac_product_listing_search %}
+<div data-mac-listing-search="true"
+      class="mac-listing-search">
+    {% block layout_header_search_input_group %}
+        <div class="input-group">
+            {% block layout_header_search_input %}
+                <input type="search"
+                       name="search"
+                       class="form-control mac-listing-search-input"
+                       autocomplete="off"
+                       autocapitalize="off"
+                       placeholder="{{ "macListingSearch.searchPlaceholder"|trans|striptags }}"
+                       aria-label="{{ "macListingSearch.searchPlaceholder"|trans|striptags }}"
+                       value="{{ app.request.get('search') }}"
+                >
+            {% endblock %}
+
+            {% block layout_header_search_icon %}
+                <div class="input-group-append">
+                    <span class="btn mac-listing-search-icon">
+                        {% sw_icon 'search' %}
+                    </span>
+                </div>
+            {% endblock %}
+        </div>
+    {% endblock %}
+</div>
+{% endblock %}

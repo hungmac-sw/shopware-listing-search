@@ -1,0 +1,31 @@
+{
+  "name": "mac/product-listing-search",
+  "description": "Search in the product listing plugin",
+  "type": "shopware-platform-plugin",
+  "version":"1.0.0",
+  "license": "MIT",
+  "authors":[
+    {
+      "name":"Hung Mac",
+      "role":"Developer",
+      "homepage":"https://hungmac.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "MacProductListingSearch\\": "src/"
+    }
+  },
+  "require": {
+    "shopware/core": "^6.3",
+    "shopware/storefront": "^6.3"
+  },
+  "extra": {
+    "shopware-plugin-class": "MacProductListingSearch\\MacProductListingSearch",
+    "plugin-icon": "src/Resources/config/plugin.png",
+    "label": {
+      "de-DE": "Suche in der Produktliste",
+      "en-GB": "Search in the product listing plugin"
+    }
+  }
+}

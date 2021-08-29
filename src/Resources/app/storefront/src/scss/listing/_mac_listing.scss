@@ -1,0 +1,33 @@
+.mac-listing-search {
+    margin-top: 10px;
+
+    .mac-listing-search-icon {
+        background: $white;
+        border: $input-border-width solid $input-group-addon-border-color;
+        border-left: 0;
+    }
+
+    .mac-listing-search-input {
+        border-right: none;
+    }
+
+    .mac-listing-search-input:focus,
+    .mac-listing-search-input:focus ~ .input-group-append .mac-listing-search-icon {
+        border-color: $sw-color-brand-primary;
+    }
+}
+
+.cms-element-product-listing-alert {
+    padding-bottom: 10px;
+}
+
+@include media-breakpoint-up(lg) {
+    .cms-element-product-listing-action-right {
+        display: flex;
+
+        .mac-listing-search {
+            margin-top: 0;
+            margin-right: 10px;
+        }
+    }
+}
